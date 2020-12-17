@@ -11,12 +11,16 @@
     <link rel="icon" href="favicon.ico">
     <style>
 
+    body {
+      background-color: #fff
+    }
+
       textarea {
         width:100%;
-        height:100px;
-        margin-bottom:30px;
+        height:200px;
+        margin-bottom:50px;
         color:#666;
-        background-color: #eee;
+        background-color: #f5f5f5;
       }
 
     </style>
@@ -24,15 +28,270 @@
   </head>
   <body>
 
-<!--1. Text branding on left, links on left, hamburger on right-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+<div class="text-center my-5">
+<h1>Bootstrap Navbars</h1>
+  Click the hyperlinks to view the HTML
+</div>
+
+<a data-toggle="collapse" href="#code1" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#1</h5>
+</a>
+<nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
+  <a class="navbar-brand" href="#">Branding</a>
+</nav>
+<code class="collapse" id="code1"><textarea disabled>
+  <nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
+    <a class="navbar-brand" href="#">Branding</a>
+  </nav>
+</textarea></code>
+
+
+<a data-toggle="collapse" href="#code2" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#2</h5>
+</a>
+<nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
+  <a class="navbar-brand" href="#">
+    <img src="https://via.placeholder.com/150" width="150" height="30" class="d-inline-block align-top" alt="">
+  </a>
+</nav>
+<code class="collapse" id="code2"><textarea disabled>
+  <nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
+    <a class="navbar-brand" href="#">
+      <img src="https://via.placeholder.com/150" width="150" height="30" class="d-inline-block align-top" alt="">
+    </a>
+  </nav>
+</textarea></code>
+
+<a data-toggle="collapse" href="#code3" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#3</h5>
+</a>
+<nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
+  <a class="navbar-brand" href="#">
+    <img src="https://via.placeholder.com/150" width="30" height="30" class="d-inline-block align-top" alt="">
+    Branding
+  </a>
+</nav>
+<code class="collapse" id="code3"><textarea disabled>
+  <nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
+    <a class="navbar-brand" href="#">
+      <img src="https://via.placeholder.com/150" width="30" height="30" class="d-inline-block align-top" alt="">
+      Branding
+    </a>
+  </nav>
+</textarea></code>
+
+<a data-toggle="collapse" href="#code4" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#4</h5>
+</a>
+<nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between shadow mb-5">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-50 order-1 order-md-0" id="navbar4">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link pl-0" href="#">Menu 1 <span class="sr-only">Menu 1</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="//codeply.com">Menu 3</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+                  <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Branding</a>
+        <div class="navbar-collapse collapse dual-nav w-50 order-2">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-rss-square"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-rss-square"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<code class="collapse" id="code4"><textarea disabled>
+  <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between shadow mb-5">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse w-50 order-1 order-md-0" id="navbar4">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a class="nav-link pl-0" href="#">Menu 1 <span class="sr-only">Menu 1</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Menu 2</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="//codeply.com">Menu 3</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+                  </li>
+              </ul>
+          </div>
+          <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Branding</a>
+          <div class="navbar-collapse collapse dual-nav w-50 order-2">
+              <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-rss-square"></i></a></li>
+                  <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-rss-square"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</textarea></code>
+
+<a data-toggle="collapse" href="#code5" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#5</h5>
+</a>
+<nav class="navbar navbar-light bg-light shadow mb-5">
+  <a class="navbar-brand" href="#">Branding 1</a>
+</nav>
+<code class="collapse" id="code5"><textarea disabled>
+  <nav class="navbar navbar-light bg-light shadow mb-5">
+    <a class="navbar-brand" href="#">Branding 1</a>
+  </nav>
+</textarea></code>
+
+
+<a data-toggle="collapse" href="#code6" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#6</h5>
+</a>
+<nav class="navbar navbar-light bg-light shadow mb-5">
+  <a class="navbar-brand" href="#">
+    <img src="https://via.placeholder.com/150" width="150" height="30" class="d-inline-block align-top" alt="">
+  </a>
+</nav>
+<code class="collapse" id="code6"><textarea disabled>
+  <nav class="navbar navbar-light bg-light shadow mb-5">
+    <a class="navbar-brand" href="#">
+      <img src="https://via.placeholder.com/150" width="150" height="30" class="d-inline-block align-top" alt="">
+    </a>
+  </nav>
+</textarea></code>
+
+<a data-toggle="collapse" href="#code7" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#7</h5>
+</a>
+<nav class="navbar navbar-light bg-light shadow mb-5">
+  <a class="navbar-brand" href="#">
+    <img src="https://via.placeholder.com/150" width="30" height="30" class="d-inline-block align-top" alt="">
+    Branding
+  </a>
+</nav>
+<code class="collapse" id="code7"><textarea disabled>
+  <nav class="navbar navbar-light bg-light shadow mb-5">
+    <a class="navbar-brand" href="#">
+      <img src="https://via.placeholder.com/150" width="30" height="30" class="d-inline-block align-top" alt="">
+      Branding
+    </a>
+  </nav>
+</textarea></code>
+
+<a data-toggle="collapse" href="#code8" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#8</h5>
+</a>
+<nav class="navbar bg-light navbar-light shadow mb-5">
+  <a class="navbar-brand" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar8" aria-controls="navigations-06" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbar8">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+        <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+      </li>
+    </ul>
+    <a class="btn btn-outline-primary" href="#">Sign up</a>
+    <form class="my-2">
+      <input class="form-control" type="text" placeholder="Search">
+    </form>
+  </div>
+</nav>
+<code class="collapse" id="code8"><textarea disabled>
+  <nav class="navbar bg-light navbar-light shadow mb-5">
+    <a class="navbar-brand" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar8" aria-controls="navigations-06" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar8">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+      <a class="btn btn-outline-primary" href="#">Sign up</a>
+      <form class="my-2">
+        <input class="form-control" type="text" placeholder="Search">
+      </form>
+    </div>
+  </nav>
+</textarea></code>
+
+<a data-toggle="collapse" href="#code9" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#9</h5>
+</a>
+<nav class="navbar navbar-light bg-light w-100 shadow mb-5">
+  <a class="navbar-brand" href="#">Branding</a>
+  <div class="d-flex align-items-center">
+    <div class="mr-3"><a class="text-muted" href="#">English</a><small class="px-2 text-muted">|</small><a href="#">French</a></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar9" aria-controls="navigations-07" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  </div>
+  <div class="collapse navbar-collapse" id="navbar9">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+        <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<code class="collapse" id="code9"><textarea disabled>
+  <nav class="navbar navbar-light bg-light w-100 shadow mb-5">
+    <a class="navbar-brand" href="#">Branding</a>
+    <div class="d-flex align-items-center">
+      <div class="mr-3"><a class="text-muted" href="#">English</a><small class="px-2 text-muted">|</small><a href="#">French</a></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar9" aria-controls="navigations-07" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar9">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</textarea></code>
+
+<a data-toggle="collapse" href="#code10" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#10</h5>
+</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
   <a href="#" class="navbar-brand">
     Branding
   </a>
-  <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+  <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar10">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <ul class="navbar-nav collapse navbar-collapse" id="menu">
+  <ul class="navbar-nav collapse navbar-collapse" id="navbar10">
     <li class="nav-item">
       <a href="#" class="nav-link">
         Menu 1
@@ -45,7 +304,7 @@
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-        Dropdown link
+        Dropdown
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="#">
@@ -61,16 +320,15 @@
     </li>
   </ul>
 </nav>
-
-<code><textarea disabled>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 shadow">
+<code class="collapse" id="code10"><textarea disabled>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
     <a href="#" class="navbar-brand">
       Branding
     </a>
-    <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+    <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar10">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <ul class="navbar-nav collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav collapse navbar-collapse" id="navbar10">
       <li class="nav-item">
         <a href="#" class="nav-link">
           Menu 1
@@ -99,153 +357,388 @@
       </li>
     </ul>
   </nav>
+</textarea></code>
 
+<a data-toggle="collapse" href="#code11" role="button" aria-expanded="false" aria-controls="collapseExample">
+<h5 class="ml-3">#11</h5>
+</a>
+<nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
+  <a class="navbar-brand" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar11" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbar11">
+    <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
+      <ul class="navbar-nav order-2 order-lg-1">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<code class="collapse" id="code11"><textarea disabled>
+  <nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
+    <a class="navbar-brand" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar11" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar11">
+      <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
+        <ul class="navbar-nav order-2 order-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </textarea></code>
 
 
-<!--2. Text branding in center, no links, no hamburger-->
-      <nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 1</a>
-      </nav>
+<a data-toggle="collapse" href="#code12" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#12</h5>
+</a>
+<nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
+  <a class="navbar-brand" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar12" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbar12">
+    <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
+      <ul class="navbar-nav order-2 order-lg-1 ml-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<code class="collapse" id="code12"><textarea disabled>
+  <nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
+    <a class="navbar-brand" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar12" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar12">
+      <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
+        <ul class="navbar-nav order-2 order-lg-1 ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</textarea></code>
 
-<!--3. Image branding in center, no links, no hamburger-->
-      <nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
-        <a class="navbar-brand" href="#">
-          <img src="https://via.placeholder.com/150" width="150" height="30" class="d-inline-block align-top" alt="">
-        </a>
-      </nav>
+<a data-toggle="collapse" href="#code13" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#13</h5>
+</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+  <a class="navbar-brand" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar13" aria-controls="navigations-08" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbar13">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+        <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+      </li>
+    </ul>
+    <a class="btn btn-outline-primary mt-2 mt-md-0 ml-lg-3" href="#">Sign up</a>
+  </div>
+</nav>
+<code class="collapse" id="code13"><textarea disabled>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+    <a class="navbar-brand" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar13" aria-controls="navigations-08" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar13">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+      <a class="btn btn-outline-primary mt-2 mt-md-0 ml-lg-3" href="#">Sign up</a>
+    </div>
+  </nav>
+</textarea></code>
 
-<!--4. Image and text branding in center, no links, no hamburger-->
-      <nav class="navbar navbar-light bg-light justify-content-center shadow mb-5">
-        <a class="navbar-brand" href="#">
-          <img src="https://via.placeholder.com/150" width="30" height="30" class="d-inline-block align-top" alt="">
-          Branding 3
-        </a>
-      </nav>
 
-<!--5. Text branding in center, links on left, icons on right, hamburger on left-->
-      <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between shadow mb-5">
-          <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
-                  <ul class="navbar-nav">
-                      <li class="nav-item active">
-                          <a class="nav-link pl-0" href="#">Menu 1 <span class="sr-only">Menu 1</span></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Menu 2</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="//codeply.com">Menu 3</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-                      </li>
-                  </ul>
-              </div>
-              <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">Branding</a>
-              <div class="navbar-collapse collapse dual-nav w-50 order-2">
-                  <ul class="nav navbar-nav ml-auto">
-                      <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-rss-square"></i></a></li>
-                      <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-rss-square"></i></a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+<a data-toggle="collapse" href="#code14" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#14</h5>
+</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+  <a class="navbar-brand col-4 pl-0 mr-0" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar14"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse justify-content-md-center col-8 px-0" id="navbar14">
+    <ul class="navbar-nav col-6 justify-content-center">
+      <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+        <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+      </li>
+    </ul>
+    <div class="col-6 text-lg-right px-0"><a class="btn btn-outline-primary mt-2 mt-lg-0 mr-0" href="#">Sign up</a></div>
+  </div>
+</nav>
+<code class="collapse" id="code14"><textarea disabled>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+    <a class="navbar-brand col-4 pl-0 mr-0" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar14"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-md-center col-8 px-0" id="navbar14">
+      <ul class="navbar-nav col-6 justify-content-center">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+      <div class="col-6 text-lg-right px-0"><a class="btn btn-outline-primary mt-2 mt-lg-0 mr-0" href="#">Sign up</a></div>
+    </div>
+  </nav>
+</textarea></code>
 
-<!--6. Text branding on left, no links, no hamburger-->
-      <nav class="navbar navbar-light bg-light shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 1</a>
-      </nav>
+<a data-toggle="collapse" href="#code15" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#15</h5>
+</a>
+<nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
+  <a class="navbar-brand" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar15" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbar15">
+    <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
+      <ul class="navbar-nav order-2 order-lg-1">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+      <ul class="navbar-nav order-1 order-lg-2">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navigations-headers-04" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Account</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navigations-headers-04"><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Logout</a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<code class="collapse" id="code15"><textarea disabled>
+  <nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
+    <a class="navbar-brand" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar15" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar15">
+      <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
+        <ul class="navbar-nav order-2 order-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+          </li>
+        </ul>
+        <ul class="navbar-nav order-1 order-lg-2">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navigations-headers-04" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Account</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navigations-headers-04"><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Logout</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</textarea></code>
 
-<!--7. Image branding on left, no links, no hamburger-->
-      <nav class="navbar navbar-light bg-light shadow mb-5">
-        <a class="navbar-brand" href="#">
-          <img src="https://via.placeholder.com/150" width="150" height="30" class="d-inline-block align-top" alt="">
-        </a>
-      </nav>
+<a data-toggle="collapse" href="#code16" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#16</h5>
+</a>
+<nav class="navbar navbar-expand-md bg-light navbar-light shadow mb-5">
+  <a class="navbar-brand" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar16" aria-controls="navigations-05" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbar16">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+        <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-md-0">
+      <input class="form-control" type="text" placeholder="Search">
+    </form>
+  </div>
+</nav>
+<code class="collapse" id="code16"><textarea disabled>
+  <nav class="navbar navbar-expand-md bg-light navbar-light shadow mb-5">
+    <a class="navbar-brand" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar16" aria-controls="navigations-05" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar16">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-md-0">
+        <input class="form-control" type="text" placeholder="Search">
+      </form>
+    </div>
+  </nav>
+</textarea></code>
 
-<!--8. Image and text branding on left, no links, no hamburger-->
-      <nav class="navbar navbar-light bg-light shadow mb-5">
-        <a class="navbar-brand" href="#">
-          <img src="https://via.placeholder.com/150" width="30" height="30" class="d-inline-block align-top" alt="">
-          Branding 2
-        </a>
-      </nav>
 
-<!--9. Text branding on left, links on left, dropdown on right, hamburger on right-->
-      <nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 2</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-04" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navigations-04">
-          <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
-            <ul class="navbar-nav order-2 order-lg-1">
-              <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-                <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-              </li>
-            </ul>
-            <ul class="navbar-nav order-1 order-lg-2">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navigations-headers-04" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Account</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navigations-headers-04"><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Logout</a></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<a data-toggle="collapse" href="#code17" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#17</h5>
+</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+  <a class="navbar-brand d-lg-none" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar17" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbar17">
+    <div class="d-flex w-100 flex-column flex-lg-row justify-content-beetween align-lg-items-center">
+      <a class="navbar-brand d-none d-lg-block col-4 mr-0 pl-0" href="#">Branding</a>
+      <ul class="navbar-nav mx-lg-auto col-4 justify-content-center">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+      <ul class="navbar-nav col-4 justify-content-end pr-0">
+        <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-rss-square"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-rss-square"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<code class="collapse" id="code17"><textarea disabled>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+    <a class="navbar-brand d-lg-none" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar17" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar17">
+      <div class="d-flex w-100 flex-column flex-lg-row justify-content-beetween align-lg-items-center">
+        <a class="navbar-brand d-none d-lg-block col-4 mr-0 pl-0" href="#">Branding</a>
+        <ul class="navbar-nav mx-lg-auto col-4 justify-content-center">
+          <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+          </li>
+        </ul>
+        <ul class="navbar-nav col-4 justify-content-end pr-0">
+          <li class="nav-item active"><a class="nav-link" href="#"><img src="https://via.placeholder.com/24" alt=""></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="https://via.placeholder.com/24" alt=""></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="https://via.placeholder.com/24" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</textarea></code>
 
-<!--10. Text branding on left, links on left, hamburger on right-->
-      <nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 3</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-05" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navigations-05">
-          <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
-            <ul class="navbar-nav order-2 order-lg-1">
-              <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-                <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<a data-toggle="collapse" href="#code18" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#18</h5>
+</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+  <a class="navbar-brand d-lg-none" href="#">Branding</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar18" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbar18">
+    <div class="d-flex w-100 flex-column flex-lg-row justify-content-between align-lg-items-center">
+      <ul class="navbar-nav mx-lg-auto col-12 justify-content-between">
+        <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<code class="collapse" id="code18"><textarea disabled>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+    <a class="navbar-brand d-lg-none" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar18" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar18">
+      <div class="d-flex w-100 flex-column flex-lg-row justify-content-between align-lg-items-center">
+        <ul class="navbar-nav mx-lg-auto col-12 justify-content-between">
+          <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</textarea></code>
 
-<!--11. Text branding on left, links on right, hamburger on right-->
-      <nav class="navbar navbar-expand-lg bg-light navbar-light shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 4</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-06" aria-controls="navigations-04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navigations-06">
-          <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100">
-            <ul class="navbar-nav order-2 order-lg-1 ml-auto">
-              <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-                <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-<!--12. Text branding on left, links on left, search on right, hamburger on right-->
-      <nav class="navbar navbar-expand-md bg-light navbar-light shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 5</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-07" aria-controls="navigations-05" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navigations-07">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
+<a data-toggle="collapse" href="#code19" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <h5 class="ml-3">#19</h5>
+</a>
+<nav class="shadow">
+  <div class="bg-light p-4 d-none d-lg-block">
+    <div class="navbar-brand">Branding</div>
+  </div>
+  <div class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+    <a class="navbar-brand d-lg-none" href="#">Branding</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar19" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar19">
+      <div class="d-flex w-100 flex-column flex-lg-row justify-content-between align-lg-items-center">
+        <ul class="navbar-nav mx-lg-auto col-12 justify-content-between">
+          <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<code class="collapse" id="code19"><textarea disabled>
+  <nav class="shadow">
+    <div class="bg-light p-4 d-none d-lg-block">
+      <div class="navbar-brand">Branding</div>
+    </div>
+    <div class="navbar navbar-expand-lg navbar-light shadow mb-5">
+      <a class="navbar-brand d-lg-none" href="#">Branding</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar19" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbar19">
+        <div class="d-flex w-100 flex-column flex-lg-row justify-content-between align-lg-items-center">
+          <ul class="navbar-nav mx-lg-auto col-12 justify-content-between">
+            <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
             <li class="nav-item dropdown">
@@ -253,181 +746,11 @@
               <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
             </li>
           </ul>
-          <form class="form-inline my-2 my-md-0">
-            <input class="form-control" type="text" placeholder="Search">
-          </form>
         </div>
-      </nav>
-
-<!--13. Text branding on left, hamburger on right-->
-      <nav class="navbar bg-light navbar-light shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 6</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-08" aria-controls="navigations-06" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navigations-08">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-              <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-            </li>
-          </ul>
-          <a class="btn btn-outline-primary" href="#">Sign up</a>
-          <form class="my-2">
-            <input class="form-control" type="text" placeholder="Search">
-          </form>
-        </div>
-      </nav>
-
-<!--14. Text branding on left, languages on right, hamburger on right-->
-      <nav class="navbar navbar-light bg-light w-100 shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 7</a>
-        <div class="d-flex align-items-center">
-          <div class="mr-3"><a class="text-muted" href="#">English</a><small class="px-2 text-muted">|</small><a href="#">French</a></div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-09" aria-controls="navigations-07" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        </div>
-        <div class="collapse navbar-collapse" id="navigations-09">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-              <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-<!--15. Text branding on left, links on right, button on far right, hamburger on right-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
-        <a class="navbar-brand" href="#">Branding 8</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-10" aria-controls="navigations-08" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navigations-10">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-              <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-            </li>
-          </ul>
-          <a class="btn btn-outline-primary mt-2 mt-md-0 ml-lg-3" href="#">Sign up</a>
-        </div>
-      </nav>
-
-<!--16. Text branding on left, links in center, button on right, hamburger on right-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
-        <a class="navbar-brand col-4 pl-0 mr-0" href="#">Branding 9</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-11"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse justify-content-md-center col-8 px-0" id="navigations-11">
-          <ul class="navbar-nav col-6 justify-content-center">
-            <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-              <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-            </li>
-          </ul>
-          <div class="col-6 text-lg-right px-0"><a class="btn btn-outline-primary mt-2 mt-lg-0 mr-0" href="#">Sign up</a></div>
-        </div>
-      </nav>
-
-<!--17. Text branding on left, links in center, icons on right, hamburger on right-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
-        <a class="navbar-brand d-lg-none" href="#">Branding 10</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-12" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navigations-12">
-          <div class="d-flex w-100 flex-column flex-lg-row justify-content-beetween align-lg-items-center">
-            <a class="navbar-brand d-none d-lg-block col-4 mr-0 pl-0" href="#">Branding</a>
-            <ul class="navbar-nav mx-lg-auto col-4 justify-content-center">
-              <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-                <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-              </li>
-            </ul>
-            <ul class="navbar-nav col-4 justify-content-end pr-0">
-              <li class="nav-item active"><a class="nav-link" href="#"><img src="https://via.placeholder.com/24" alt=""></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><img src="https://via.placeholder.com/24" alt=""></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><img src="https://via.placeholder.com/24" alt=""></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-<!--18. Links spread between, branding on left, hamburger on right-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
-        <a class="navbar-brand d-lg-none" href="#">Branding 11</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-13" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navigations-13">
-          <div class="d-flex w-100 flex-column flex-lg-row justify-content-between align-lg-items-center">
-            <ul class="navbar-nav mx-lg-auto col-12 justify-content-between">
-              <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-                <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-<!--19. Top bar, Links spread between, branding on left, hamburger on right-->
-      <nav class="shadow mb-5">
-        <div class="bg-light p-4 d-none d-lg-block">
-          <div class="navbar-brand">Branding</div>
-        </div>
-        <div class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand d-lg-none" href="#">Branding 12</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-14" aria-controls="navigations-10" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navigations-14">
-            <div class="d-flex w-100 flex-column flex-lg-row justify-content-between align-lg-items-center">
-              <ul class="navbar-nav mx-lg-auto col-12 justify-content-between">
-                <li class="nav-item"><a class="nav-link active" href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
-                  <div class="dropdown-menu"><a class="dropdown-item" href="#">Dropdown menu 1</a><a class="dropdown-item" href="#">Dropdown menu 2</a></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-<!--20. Links on left, links on right, branding on left, hamburger on right-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
-        <a class="navbar-brand d-lg-none" href="#">Branding 13</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-15"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse justify-content-md-center" id="navigations-15">
-          <div class="row w-100">
-            <div class="col-4 pl-lg-0">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="#">Menu 1<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
-              </ul>
-            </div>
-            <div class="col-4 navbar-nav text-center pr-0 d-none d-lg-block"><a class="navbar-brand mr-0" href="#"></a></div>
-            <div class="col-4 pr-lg-0">
-              <ul class="navbar-nav justify-content-end">
-                <li class="nav-item"><a class="nav-link" href="#">Dropdown</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Dropdown menu 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Dropdown menu 2</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
+</textarea></code>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
